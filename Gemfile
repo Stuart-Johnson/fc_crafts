@@ -4,13 +4,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.5'
 
 
-# Bootstrap 4 gem
-gem "twitter-bootstrap-rails"
+# HAML gem for templates
+gem "haml-rails", "~> 2.0"
+
+# Use mysql as the database for Active Record
+gem 'mysql2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
-# Use mysql as the database for Active Record
-gem 'mysql2'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
